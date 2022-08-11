@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+  </head>
+  <body>
+    <section class="hero">
+      <h1 class="heading-primary">Css Course</h1>
+      <p class="hero-description">
+        The smart 365-days-per-year food subscription that will make you eat
+        healthy again. Tailored to your personal tastes and nutritional needs.
+      </p>
+      <a href="/starter/07-Omnifood-Desktop/index.html" class="btn btn--full"
+        >Omnifood</a
+      >
+    </section>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .hero {
+    max-width: 130rem;
+    /* trick to center */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+  }
+  .heading-primary {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+  }
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.9rem;
+
+    transition: background-color 0.3s;
+  }
+
+  .btn--full:link,
+  .btn--full:visited {
+    background-color: #e67e22;
+    color: #fff;
+  }
+
+  .btn--full:hover,
+  .btn--full:active {
+    background-color: #cf711f;
+  }
+</style>
