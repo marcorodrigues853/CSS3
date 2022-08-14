@@ -39,6 +39,7 @@ Greys:
 
 -- 06 BORDER-RADIUS
 default: 9px
+medium 11px
 
 -- 07 WHITESPACE
 - Spacing System (px)
@@ -83,6 +84,11 @@ body {
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -134,7 +140,8 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 0.9rem;
 
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -162,6 +169,36 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+  display: inline-block; /* need inline-block once we are using padding */
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor; /* to not  write the color again */
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* HELPER/SETTINGS CLASSES */
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.strong {
+  font-weight: 500;
 }
