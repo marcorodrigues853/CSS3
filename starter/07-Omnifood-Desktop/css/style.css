@@ -11,6 +11,7 @@
   /* Bec ause we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .logo {
   height: 2.2rem;
@@ -56,6 +57,25 @@
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
   color: #fff;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
 }
 
 /**************************************/
@@ -325,8 +345,7 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
 }
-.testimonial {
-}
+
 .testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
