@@ -128,10 +128,14 @@ body {
 .grid--center-v {
   align-items: center;
 }
+
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
+  /* color: #45260a; */
+  /* color: #343a40; */
   letter-spacing: -0.5px;
 }
 
@@ -172,7 +176,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  border-radius: 0.9px;
+  border-radius: 9px;
 
   /*only for btn it self*/
   border: none;
