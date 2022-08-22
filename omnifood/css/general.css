@@ -183,7 +183,7 @@ body {
   cursor: pointer;
   font-family: inherit;
 
-  /* Put transition on original "state" */
+  /* Put transition on origivl "state" */
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
 }
