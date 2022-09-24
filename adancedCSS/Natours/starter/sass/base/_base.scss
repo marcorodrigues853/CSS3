@@ -1,0 +1,19 @@
+/*
+ this i because every header and  other elements just give some margins so reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* change the box and paddings */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.body {
+  // this defines what 1rem is
+  box-sizing: border-box;
+}
