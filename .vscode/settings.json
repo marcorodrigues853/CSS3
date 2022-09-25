@@ -4,5 +4,8 @@
   "files.autoSave": "onFocusChange",
   "editor.tabSize": 2,
   "prettier.singleQuote": true,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented"
+  }
 }
