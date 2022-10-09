@@ -106,7 +106,7 @@ body {
   background-image: linear-gradient(to right bottom, #55c57a, #28b485);
 }
 .card__heading-span--3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  background-image: linear-gradient(to right bottom, #e67e22, #cf711f);
 }
 
 .card__picture {
@@ -135,7 +135,7 @@ body {
   position: relative;
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+  background-image: linear-gradient(to right bottom, #e67e22, #cf711f),
     url(/img/hotel-3.jpg);
   position: relative;
 }
@@ -214,7 +214,7 @@ body {
 }
 .btn--blue {
   border-radius: 100px;
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  background-image: linear-gradient(to right bottom, #e67e22, #cf711f);
   color: #fff;
   align-self: center;
 }
