@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Index</title>
   </head>
   <body>
-    <section class="hero">
+    <!-- <section class="hero">
       <h1 class="heading-primary">Css Course</h1>
       <p class="hero-description">
         The smart 365-days-per-year food subscription that will make you eat
@@ -20,7 +21,106 @@
       <a href="/adancedCSS/Trillo/starter/index.html" class="btn btn--full"
         >Trillio</a
       >
-    </section>
+    </section> -->
+
+    <header class="header">
+      <div class="logo">Logo</div>
+      <div class="header__nav">
+        <div class="header__nav-item">Projects</div>
+        <div class="header__nav-item">Tutorials</div>
+        <div class="header__nav-item">1</div>
+        <div class="header__nav-item">1</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-projects">
+        <div class="card-list">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--1"></div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--1">
+                  Trillio</span
+                >
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>Up to 30 people</li>
+                  <li>2 tours guides</li>
+                  <li>Sleep in cozy hotels</li>
+                </ul>
+              </div>
+              <a
+                href="/adancedCSS/Trillo/starter/index.html"
+                class="btn btn--pink"
+                >Access it!</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--2"></div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--2">
+                  Natours</span
+                >
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>Up to 30 people</li>
+                  <li>2 tours guides</li>
+                  <li>Sleep in cozy hotels</li>
+                </ul>
+              </div>
+              <a
+                href="/adancedCSS/Natours/starter/index.html"
+                class="btn btn--green"
+                >Access it!</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--3"></div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--3">
+                  Omnifood</span
+                >
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>Up to 30 people</li>
+                  <li>2 tours guides</li>
+                  <li>Sleep in cozy hotels</li>
+                </ul>
+              </div>
+              <a href="/omnifood/index.html" class="btn btn--blue"
+                >Access it!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="signup">
+        <label for="email" class="singup__label-title">Newsletter</label>
+        <input
+          type="email"
+          class="input__signup-email"
+          id="email"
+          placeholder="enter or email"
+        />
+        <button class="btn btn--white">subscribe</button>
+      </div>
+    </footer>
   </body>
 </html>
 <style>
