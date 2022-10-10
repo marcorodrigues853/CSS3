@@ -46,10 +46,12 @@ body {
 }
 
 .card-list {
-  padding: 13rem 0 13rem 0;
+  padding: 5rem 0 5rem 0;
   max-width: 124rem;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
 }
