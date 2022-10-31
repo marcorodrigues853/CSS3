@@ -142,27 +142,27 @@ body {
 
 .card__picture--2 {
   background-image: linear-gradient(to right bottom, #55c57a, #28b485),
-    url(/img/hotel-2.jpg);
+    url(/img/projects/hero-small.jpg);
   position: relative;
 }
 .card__picture--3 {
   background-image: linear-gradient(to right bottom, #e67e22, #cf711f),
-    url(/img/hotel-3.jpg);
+    url(/img/projects/omnifood.jpg);
   position: relative;
 }
 .card__picture--4 {
-  background-image: linear-gradient(to right bottom, #101d2c, #041324),
-    url(/img/hotel-1.jpg);
+  background-image: linear-gradient(to right bottom, #101d2c, #00050a),
+    url(/img/projects/nexter.jpeg);
   position: relative;
 }
 .card__picture--5 {
   background-image: linear-gradient(to right bottom, #5570f1, #4761e1),
-    url(/img/hotel-1.jpg);
+    url(/img/projects/dashboard.png);
   position: relative;
 }
 .card__picture--6 {
   background: linear-gradient(to right bottom, #e66465, #9198e5),
-    url('https://i.ibb.co/R0Y8T8r/nike19.png');
+    url('/img/projects/nike19.png');
   position: relative;
   background-size: cover;
 }
