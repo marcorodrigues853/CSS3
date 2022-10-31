@@ -161,7 +161,7 @@ body {
   position: relative;
 }
 .card__picture--6 {
-  background: linear-gradient(0.25turn, #e66465, #9198e5),
+  background: linear-gradient(to right bottom, #e66465, #9198e5),
     url('https://i.ibb.co/R0Y8T8r/nike19.png');
   position: relative;
   background-size: cover;
