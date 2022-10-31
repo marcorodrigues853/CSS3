@@ -1,0 +1,80 @@
+.order {
+  @include flex-center-column;
+  gap: 2rem;
+  flex-grow: 1;
+  max-height: 65rem;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    overflow: hidden;
+    overflow-y: auto;
+    align-self: normal;
+
+    @include flex-column;
+    padding: 1rem 0;
+    gap: 1.5rem;
+
+    &-item {
+      &:not(:last-child) {
+        border-bottom: 1px solid #f1f3f9;
+        padding-bottom: 1rem;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &__product {
+        @include flex-center-vert;
+        justify-content: space-between;
+        gap: 1rem;
+
+        &-details {
+          @include flex-column;
+          justify-content: space-between;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__title {
+    color: map-get($map: $black, $key: '60');
+  }
+  &__date {
+    @include font-size(12, 15);
+    text-align: right;
+    color: map-get($map: $black, $key: '20');
+  }
+  &__price {
+    color: map-get($map: $black, $key: '80');
+    @include font-face(500);
+  }
+  &__badge {
+    @include font-face(400);
+    @include font-size(12, 15);
+    text-align: right;
+  }
+}
+
+.no-order-icon {
+  @include flex-center;
+  padding: 7rem;
+  margin-bottom: 3rem;
+
+  font-family: $font-secondary;
+
+  border-radius: 50%;
+  background-color: $main-background;
+  border: 1px solid $gray;
+  width: 12rem;
+  height: 12rem;
+}

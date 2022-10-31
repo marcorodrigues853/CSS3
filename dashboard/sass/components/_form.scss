@@ -1,0 +1,52 @@
+.form {
+  &__group {
+    @include flex-center-vert;
+    justify-content: space-around;
+    background: rgba(239, 241, 249, 0.6);
+    width: 37.5rem;
+    height: 5.2rem;
+    padding: 1rem;
+  }
+  &__input {
+    border: none;
+    width: 100%;
+    font-family: inherit;
+
+    @include font-size(16);
+
+    color: inherit;
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    border-radius: 8px;
+    background: rgba(239, 241, 249, 0.6);
+
+    // flex: 1;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.05rem rgba(0, 0, 0, 0.1);
+    }
+
+    &__icon {
+      &--end {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+select {
+  min-width: 10rem;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+
+  border: none;
+  color: map-get($map: $primary, $key: '100');
+  background: rgba(85, 112, 241, 0.08);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(85, 112, 241, 0.2);
+}

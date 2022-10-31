@@ -1,0 +1,115 @@
+// ASIDE MENU
+// @import '../layout/navigation';
+
+.aside {
+  transition: width 0.2s ease-out, padding 0.4s ease-out;
+
+  @media screen and (max-width: 768px) {
+    width: 120px;
+    padding: 1rem;
+  }
+
+  padding: 3.1rem;
+  background-color: #fff;
+  height: 100vh;
+  width: 296px;
+  @include flex-column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &-header__logo {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      & > span {
+        display: none;
+      }
+    }
+
+    @include flex-center-vert;
+
+    &-text {
+      @include font-face(700, $font-secondary);
+      @include font-size(20, 30);
+      text-align: center;
+      color: map-get($map: $black, $key: '60');
+      margin-left: 1rem;
+    }
+  }
+}
+
+.menu__extra {
+  @include flex-column;
+  gap: 1rem;
+
+  &-support {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > span {
+        display: none;
+      }
+    }
+  }
+}
+
+.menu__extra-free-gift {
+  @include flex-column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.extra-free {
+  @include flex-center-vert;
+  gap: 1rem;
+  @media screen and (max-width: 768px) {
+    & > span {
+      display: none;
+    }
+  }
+}
+
+.logout {
+  margin-left: -1rem; // padding is 2rem so middle it's 1rem
+  color: $warning;
+  display: flex;
+  gap: 2rem;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > span {
+      display: none;
+    }
+  }
+}
+
+.span-free {
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+
+  @include font-size(12, 15);
+  text-decoration: none;
+  color: map-get($map: $black, $key: '40');
+
+  & > img {
+    align-self: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.aside-footer {
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

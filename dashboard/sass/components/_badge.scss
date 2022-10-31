@@ -1,0 +1,20 @@
+.badge {
+  @include flex-center;
+  border-radius: 8px;
+  padding: 0.2rem 1.5rem;
+
+  @include font-size(12, 15);
+
+  &-success {
+    background: rgba(50, 147, 111, 0.12);
+    color: $success;
+  }
+  &-warning {
+    background: rgba(50, 147, 111, 0.12);
+    color: $warning;
+  }
+  &-danger {
+    background: rgba(245, 126, 119, 0.12);
+    color: $warning;
+  }
+}

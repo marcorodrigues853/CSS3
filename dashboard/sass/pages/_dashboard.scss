@@ -1,0 +1,14 @@
+body {
+  display: flex;
+}
+
+.container {
+  background-color: $main-background;
+}
+
+main {
+  background-color: $main-background;
+  height: 100vh;
+  flex-grow: 1;
+  overflow: scroll;
+}

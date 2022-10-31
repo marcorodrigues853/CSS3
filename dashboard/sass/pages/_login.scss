@@ -1,0 +1,43 @@
+@import './../base/colors';
+
+.login-body {
+  @include flex-column;
+}
+
+.login-header {
+  background-color: $white;
+  width: 100vw;
+  height: 7.6rem;
+  position: fixed;
+  padding: 4rem 8.6rem;
+  @include flex-center-vert;
+}
+
+.main-login {
+  @include flex-center;
+}
+
+.input-login {
+  @include flex-column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.recovery-password {
+  align-self: end;
+  color: map-get($map: $primary, $key: '100');
+  text-decoration: none;
+}
+
+.signup {
+  text-decoration: none;
+  color: map-get($map: $black, $key: '30');
+
+  &-text {
+    color: inherit;
+  }
+  & a {
+    text-decoration: none;
+    color: map-get($map: $primary, $key: '100');
+  }
+}

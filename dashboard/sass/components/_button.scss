@@ -1,0 +1,62 @@
+@import './../base/colors';
+
+.btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  gap: 1rem;
+  padding: 1.1rem 1.6rem 1.1rem 1.6rem;
+  background-color: transparent;
+  text-decoration: none;
+  transition: scale 0.4s;
+
+  @include flex-center-vert;
+  justify-content: flex-start;
+  color: map-get($map: $black, $key: '100');
+
+  &:hover {
+    scale: 1.04;
+  }
+
+  //  button shapes
+  &--round {
+    border-radius: 16px;
+  }
+
+  // button sizes
+  &--small {
+  }
+  &--medium {
+    height: 4.6rem;
+  }
+  &--big {
+    height: 8.2rem;
+  }
+
+  &--login {
+    height: 5.8rem;
+    width: 18rem;
+
+    @include font-size(20, 24);
+    margin: auto;
+  }
+
+  // align
+  &--center {
+    justify-content: center;
+  }
+  &--right {
+    justify-content: flex-end;
+  }
+
+  // button  colors
+  &--yellow {
+    background-color: rgb(255, 204, 145, 0.2);
+  }
+  &--grey {
+    background-color: rgb(94, 99, 102, 0.1);
+  }
+  &--primary {
+    background-color: map-get($map: $primary, $key: '100');
+    color: $white;
+  }
+}

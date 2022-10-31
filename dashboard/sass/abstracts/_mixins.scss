@@ -1,0 +1,41 @@
+// Flex @mixin
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+// font face
+@mixin font-face($weight: 400, $family: $font-primary) {
+  font-weight: $weight;
+  @if $family== $font-primary {
+  } @else {
+    font-family: $family;
+  }
+}
+
+// font size
+@mixin font-size($size: 14, $line-height: 17) {
+  font-size: $size * 0.1rem;
+  line-height: $line-height * 0.1rem;
+}

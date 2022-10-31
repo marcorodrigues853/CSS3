@@ -1,0 +1,30 @@
+header {
+  // width: calc(100% - 296px); // 100% less the menu
+  width: 100%;
+  @include font-face(500, $font-secondary);
+  @include font-size(20, 30);
+  @include flex-center-vert;
+
+  background-color: $white;
+  color: map-get($map: $black, $key: '60');
+
+  z-index: 1000;
+  justify-content: space-between;
+
+  padding: 1.4rem 2.1rem 1.4rem 2.1rem;
+  height: 6rem;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+.member__area {
+  @include flex-center-vert;
+  justify-content: space-between;
+  gap: 2rem;
+
+  &-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
