@@ -141,6 +141,11 @@ body {
     url(/img/hotel-3.jpg);
   position: relative;
 }
+.card__picture--4 {
+  background-image: linear-gradient(to right bottom, #101d2c, #041324),
+    url(/img/hotel-1.jpg);
+  position: relative;
+}
 
 .card__details {
   padding: 3rem;
@@ -220,6 +225,13 @@ body {
   color: #fff;
   align-self: center;
 }
+.btn--dark-blue {
+  border-radius: 100px;
+  background-image: linear-gradient(to right bottom, #101d2c, #041324);
+  color: #fff;
+  align-self: center;
+}
+
 .btn--green {
   border-radius: 100px;
   background-image: linear-gradient(to right bottom, #55c57a, #28b485);
