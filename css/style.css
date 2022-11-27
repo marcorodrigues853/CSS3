@@ -117,7 +117,10 @@ body {
   background-image: linear-gradient(to right bottom, #5570f1, #4761e1);
 }
 .card__heading-span--6 {
-  background: linear-gradient(0.25turn, #e66465, #9198e5);
+  background-image: linear-gradient(to right bottom, #e66465, #9198e5);
+}
+.card__heading-span--7 {
+  background-image: linear-gradient(to right bottom, #581b1b, #83e267);
 }
 
 .card__picture {
@@ -161,10 +164,14 @@ body {
   position: relative;
 }
 .card__picture--6 {
-  background: linear-gradient(to right bottom, #e66465, #9198e5),
+  background-image: linear-gradient(to right bottom, #e66465, #9198e5),
     url('/img/projects/nike19.png');
   position: relative;
-  background-size: cover;
+}
+.card__picture--7 {
+  background-image: linear-gradient(to right bottom, #581b1b, #83e267),
+    url('https://cdn.myanimelist.net/images/anime/13/17405l.jpg');
+  position: relative;
 }
 
 .card__details {
