@@ -170,7 +170,7 @@ body {
 }
 .card__picture--7 {
   background-image: linear-gradient(to right bottom, #581b1b, #83e267),
-    url('https://cdn.myanimelist.net/images/anime/13/17405l.jpg');
+    url('/img/anime.jpeg');
   position: relative;
 }
 
