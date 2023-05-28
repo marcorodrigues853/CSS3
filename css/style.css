@@ -158,7 +158,7 @@ body {
 }
 .card__picture--4 {
   background-image: linear-gradient(to right bottom, #101d2c, #00050a),
-    url(/img/projects/nexter.jpeg);
+    url(/CSS3/img/projects/nexter.jpeg);
   position: relative;
 }
 .card__picture--5 {
